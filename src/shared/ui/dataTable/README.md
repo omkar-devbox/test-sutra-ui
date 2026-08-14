@@ -1,6 +1,6 @@
 # 📊 Data Table UI Component (`@/shared/ui/dataTable`)
 
-Welcome to the comprehensive documentation for the **DataTable UI Component** in the `omkar-devbox` design system.
+Welcome to the comprehensive documentation for the **DataTable UI Component** in the `Sutra-ui` design system.
 
 The `<DataTable />` component is a feature-rich, high-performance tabular data display engine supporting sticky column pinning, sorting, column resizing, card-view switching, pagination, and multi-row selection.
 
@@ -114,4 +114,4 @@ export function UserTable({ users }: { users: User[] }) {
 
 ---
 
-Part of the **omkar-devbox UI Component Architecture**. Built with React, TypeScript, and Tailwind CSS.
+Part of the **Sutra-ui UI Component Architecture**. Built with React, TypeScript, and Tailwind CSS.

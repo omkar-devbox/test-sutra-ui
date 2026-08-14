@@ -404,4 +404,4 @@ If you need to change project-wide badge colors, edit `style.ts` directly.
 ---
 
 ## 📄 License & System Info
-Part of the **omkar-devbox UI Component Architecture**. Built with React, TypeScript, and Tailwind CSS.
+Part of the **Sutra-ui UI Component Architecture**. Built with React, TypeScript, and Tailwind CSS.

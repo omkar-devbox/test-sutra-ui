@@ -364,7 +364,7 @@ export const UserInviteModal = () => {
           <ModalHeader 
             icon={<Mail className="h-5 w-5 text-indigo-500" />}
             title="Invite Teammate"
-            description="Send an invitation link to collaborate on omkar-devbox."
+            description="Send an invitation link to collaborate on Sutra-ui."
           />
           <ModalBody>
             <div className="space-y-4">
@@ -645,4 +645,4 @@ const inputRef = useRef<HTMLInputElement>(null);
 ---
 
 ## 📄 License & Attribution
-Part of the **omkar-devbox UI Component Architecture**. Built with React, Framer Motion, Tailwind CSS, and Lucide Icons.
+Part of the **Sutra-ui UI Component Architecture**. Built with React, Framer Motion, Tailwind CSS, and Lucide Icons.

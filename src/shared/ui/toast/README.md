@@ -1,6 +1,6 @@
 # 🔔 Toast Notification System (`@/shared/ui/toast`)
 
-Welcome to the comprehensive documentation for the **Toast Notification System** in the `omkar-devbox` design system.
+Welcome to the comprehensive documentation for the **Toast Notification System** in the `Sutra-ui` design system.
 
 The Toast module provides an ultra-lightweight, zero-dependency notification system powered by React's `useSyncExternalStore`. It supports customizable alert popups, promise tracking (`toast.promise`), placement positioning, auto-dismiss timers, and dark-mode aesthetics.
 
@@ -108,4 +108,4 @@ async function saveUserProfile(data: UserData) {
 
 ---
 
-Part of the **omkar-devbox UI Component Architecture**. Built with React, TypeScript, and Tailwind CSS.
+Part of the **Sutra-ui UI Component Architecture**. Built with React, TypeScript, and Tailwind CSS.

@@ -47,7 +47,7 @@ function getLocalStorage(): Storage | null {
 export const local = {
   /**
    * Store any value (objects/arrays are auto-serialized).
-   * @example local.set('user', { id: 1, name: 'Omkar' })
+   * @example local.set('user', { id: 1, name: 'Sutra-ui' })
    */
   set<T extends StorageValue>(key: string, value: T): void {
     try {

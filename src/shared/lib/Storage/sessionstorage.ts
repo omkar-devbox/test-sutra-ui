@@ -41,7 +41,7 @@ function getSessionStorage(): Storage | null {
 export const session = {
   /**
    * Store any value (objects/arrays are auto-serialized).
-   * @example session.set('tempUser', { id: 1, name: 'Omkar' })
+   * @example session.set('tempUser', { id: 1, name: 'Sutra-ui' })
    */
   set<T extends StorageValue>(key: string, value: T): void {
     try {

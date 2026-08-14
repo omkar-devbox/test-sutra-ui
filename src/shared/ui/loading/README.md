@@ -401,4 +401,4 @@ export const ArticlePage = () => {
 ---
 
 ## 📄 License & Attribution
-Part of the **omkar-devbox UI Component Architecture**. Built with React, Framer Motion, Tailwind CSS, and Lucide.
+Part of the **Sutra-ui UI Component Architecture**. Built with React, Framer Motion, Tailwind CSS, and Lucide.

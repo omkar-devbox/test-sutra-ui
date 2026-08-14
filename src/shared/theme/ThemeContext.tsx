@@ -31,7 +31,7 @@ export interface ThemeProviderProps {
 export function ThemeProvider({
   children,
   defaultTheme = "system",
-  storageKey = "omkar_devbox_theme",
+  storageKey = "sutra_ui_theme",
 }: ThemeProviderProps) {
   const isFirstRender = useRef(true);
   const [theme, setThemeState] = useState<Theme>(() => {

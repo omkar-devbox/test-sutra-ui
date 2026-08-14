@@ -6,7 +6,7 @@ import { ToastContainer } from "@/shared/ui";
 // Provides global application context such as theme, routing, and notifications.
 export function Providers({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider defaultTheme="system" storageKey="omkar_devbox_theme">
+    <ThemeProvider defaultTheme="system" storageKey="sutra_ui_theme">
       {/* Provides client-side routing for the application. */}
       <BrowserRouter>
         {children}

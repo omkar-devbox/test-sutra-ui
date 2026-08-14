@@ -38,7 +38,7 @@ export const Sidebar: FC<SidebarMainProps> = memo(({
   defaultWidth = 256,
   minWidth = 200,
   maxWidth = 480,
-  storageKey = "omkar_devbox_sidebar_width",
+  storageKey = "sutra_ui_sidebar_width",
   onWidthChange,
   menu = DEFAULT_SIDEBAR_CONFIG.menu,
   side = "left",

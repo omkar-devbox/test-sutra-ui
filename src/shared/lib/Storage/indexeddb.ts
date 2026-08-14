@@ -6,7 +6,7 @@
  * Usage:
  *   import { idb, createIndexedDB } from '@/shared/lib/Storage/indexeddb'
  *
- *   await idb.set('user', { id: 1, name: 'Omkar' })
+ *   await idb.set('user', { id: 1, name: 'Sutra-ui' })
  *   const user = await idb.get<User>('user')
  *   const lang = await idb.getOrDefault('lang', 'en')
  *   await idb.remove('user')
@@ -71,7 +71,7 @@ export class IndexedDBStorage {
 
   /**
    * Store any value (objects/arrays are auto-stored).
-   * @example await idb.set('user', { id: 1, name: 'Omkar' })
+   * @example await idb.set('user', { id: 1, name: 'Sutra-ui' })
    */
   async set<T extends StorageValue>(key: string, value: T): Promise<void> {
     try {

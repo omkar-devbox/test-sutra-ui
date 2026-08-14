@@ -1,6 +1,6 @@
-# omkar-devbox Frontend
+# Sutra-ui Frontend
 
-A modern, high-performance web application frontend for **omkar-devbox**, built using **React 18**, **Vite**, **TypeScript**, and **Tailwind CSS**.
+A modern, high-performance web application frontend for **Sutra-ui**, built using **React 18**, **Vite**, **TypeScript**, and **Tailwind CSS**.
 
 ---
 
@@ -23,7 +23,7 @@ A modern, high-performance web application frontend for **omkar-devbox**, built 
 
 ## 🚀 Overview
 
-omkar-devbox Frontend provides a responsive user interface with role-based navigation, dashboard views, dynamic data management, and seamless backend integration.
+Sutra-ui Frontend provides a responsive user interface with role-based navigation, dashboard views, dynamic data management, and seamless backend integration.
 
 ### Core Tech Stack
 - **Framework**: React 18
@@ -56,7 +56,7 @@ Follow these steps to set up and run the project on your local environment:
 Open your terminal and navigate to the project directory:
 
 ```bash
-cd omkar-devbox-frontend
+cd sutra-ui-frontend
 ```
 
 ### 2. Install Dependencies
@@ -124,7 +124,7 @@ In the project directory, you can run:
 ## 📂 Project Architecture & Directory Structure
 
 ```text
-omkar-devbox-frontend/
+sutra-ui-frontend/
 ├── public/                 # Static assets (favicons, images, public resources)
 ├── src/
 │   ├── app/                # Application layer setup
@@ -209,5 +209,5 @@ npm install
 
 ## 📄 License
 
-Internal project for **omkar-devbox**. All rights reserved.
+Internal project for **Sutra-ui**. All rights reserved.
 

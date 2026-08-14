@@ -1,6 +1,6 @@
 # 🤖 AI Assistant UI Component (`@/shared/ui/Ai`)
 
-Welcome to the comprehensive documentation for the **AI Assistant UI Component Suite** in the `omkar-devbox` design system.
+Welcome to the comprehensive documentation for the **AI Assistant UI Component Suite** in the `Sutra-ui` design system.
 
 This module provides a turn-key, feature-rich conversational AI sidebar and chat interface with real-time streaming response handling, attachment uploads, markdown code block rendering, dynamic suggestion chips, and full dark-mode styling support.
 
@@ -91,7 +91,7 @@ export function DashboardWithAi() {
       <AiSidebar
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-        title="omkar-devbox Copilot"
+        title="Sutra-ui Copilot"
         subtitle="Powered by LLM API"
       />
     </div>
@@ -111,4 +111,4 @@ export function DashboardWithAi() {
 
 ---
 
-Part of the **omkar-devbox UI Component Architecture**. Built with React, TypeScript, and Tailwind CSS.
+Part of the **Sutra-ui UI Component Architecture**. Built with React, TypeScript, and Tailwind CSS.

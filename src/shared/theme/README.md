@@ -1,6 +1,6 @@
 # 🌓 Theme Context & Dark Mode Engine (`@/shared/theme`)
 
-Welcome to the comprehensive documentation for the **Theme Context & Dark Mode Engine** in the `omkar-devbox` application.
+Welcome to the comprehensive documentation for the **Theme Context & Dark Mode Engine** in the `Sutra-ui` application.
 
 This module provides system color scheme detection, zero-flicker HTML class synchronization, localStorage persistence, and smooth View Transitions API crossfading when switching themes.
 
@@ -29,7 +29,7 @@ The Theme module manages color modes (`light`, `dark`, `system`). It automatical
 ### Key Capabilities:
 - ⚡ **Zero-Flicker Mounting**: Anti-FOUC (Flash of Unstyled Content) initialization.
 - 🎨 **View Transitions API Integration**: Native fluid crossfade animation on supported browsers.
-- 💾 **Automatic Storage Persistence**: Remembers theme preference under storage key `omkar_devbox_theme`.
+- 💾 **Automatic Storage Persistence**: Remembers theme preference under storage key `sutra_ui_theme`.
 - 💻 **OS Preference Listener**: Dynamically responds when operating system toggles light/dark mode.
 
 ---
@@ -48,7 +48,7 @@ The Theme module manages color modes (`light`, `dark`, `system`). It automatical
 | Prop | Type | Default | Description |
 | :--- | :--- | :--- | :--- |
 | `defaultTheme` | `"light" \| "dark" \| "system"` | `"system"` | Default initial theme when no stored theme exists. |
-| `storageKey` | `string` | `"omkar_devbox_theme"` | LocalStorage key name used for persistence. |
+| `storageKey` | `string` | `"sutra_ui_theme"` | LocalStorage key name used for persistence. |
 | `children` | `ReactNode` | **Required** | Application tree wrapped by provider. |
 
 ---
@@ -77,7 +77,7 @@ import { ThemeProvider } from "@/shared/theme";
 
 export function RootProviders({ children }: { children: React.ReactNode }) {
   return (
-    <ThemeProvider defaultTheme="system" storageKey="omkar_devbox_theme">
+    <ThemeProvider defaultTheme="system" storageKey="sutra_ui_theme">
       {children}
     </ThemeProvider>
   );
@@ -110,11 +110,12 @@ export function ThemeToggle() {
 ## 💾 Storage Key & Persistence
 
 The active user theme selection is serialized into browser `localStorage` under the key:
-`omkar_devbox_theme`
+`sutra_ui_theme`
 
-To reset theme state programmatically or in test setups:
-```js
-localStorage.removeItem("omkar_devbox_theme");
+To reset theme state programmatically:
+
+```javascript
+localStorage.removeItem("sutra_ui_theme");
 ```
 
 ---
@@ -126,4 +127,4 @@ localStorage.removeItem("omkar_devbox_theme");
 
 ---
 
-Part of the **omkar-devbox Architecture**. Built with React, TypeScript, and Tailwind CSS.
+Part of the **Sutra-ui Architecture**. Built with React, TypeScript, and Tailwind CSS.

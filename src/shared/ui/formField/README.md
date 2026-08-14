@@ -1,6 +1,6 @@
 # 📝 Form Field & Dynamic JSON Renderer (`@/shared/ui/formField`)
 
-Welcome to the comprehensive documentation for the **FormField & Form System Component** in the `omkar-devbox` design system.
+Welcome to the comprehensive documentation for the **FormField & Form System Component** in the `Sutra-ui` design system.
 
 The `<FormField />` component provides a unified, accessible form input interface supporting standard text inputs, textareas, custom selects, custom date pickers, checkboxes, radio button groups, field-level Role-Based Access Control (RBAC), and dynamic JSON schema form generation via `<JsonFormRenderer />`.
 
@@ -98,7 +98,7 @@ export function LoginForm() {
     <FormField
       type="email"
       label="Email Address"
-      placeholder="alex@omkar-devbox.com"
+      placeholder="alex@sutra-ui.com"
       value={email}
       onChange={handleChange}
       error={error}
@@ -120,4 +120,4 @@ export function LoginForm() {
 
 ---
 
-Part of the **omkar-devbox UI Component Architecture**. Built with React, TypeScript, and Tailwind CSS.
+Part of the **Sutra-ui UI Component Architecture**. Built with React, TypeScript, and Tailwind CSS.
