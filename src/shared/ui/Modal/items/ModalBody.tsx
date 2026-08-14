@@ -1,5 +1,5 @@
 import React from 'react';
-import type { ModalBodyProps } from '../types';
+import type { ModalBodyProps } from '../types/modal.types';
 import { cn } from '../../../lib/utils';
 import { getModalStyle } from '../style/style';
 

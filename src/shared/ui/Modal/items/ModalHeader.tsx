@@ -1,6 +1,6 @@
 import React from 'react';
 import { X } from 'lucide-react';
-import type { ModalHeaderProps } from '../types';
+import type { ModalHeaderProps } from '../types/modal.types';
 import { cn } from '../../../lib/utils';
 import { getModalStyle } from '../style/style';
 

@@ -1,4 +1,4 @@
-import type { ModalStyleConfig } from "../types";
+import type { ModalStyleConfig } from "../types/modal.types";
 
 export const defaultModalStyleConfig: ModalStyleConfig = {
   overlay: {

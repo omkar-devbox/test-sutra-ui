@@ -56,7 +56,7 @@ export const Loading: React.FC<LoadingProps> = ({
             transition={{ duration: 0.4 }}
             className={base.logo}
           >
-            RT
+            Omkar
           </motion.div>
 
           {/* Loader */}

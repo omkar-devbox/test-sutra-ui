@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import type { ModalProps } from '../types';
+import type { ModalProps } from '../types/modal.types';
 import { cn } from '../../../lib/utils';
 import { getModalStyle } from '../style/style';
 

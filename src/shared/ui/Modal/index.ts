@@ -3,4 +3,4 @@ export * from "./items/ModalHeader";
 export * from "./items/ModalBody";
 export * from "./items/ModalFooter";
 export * from "./hooks/useModal";
-export type * from "./types";
+export * from "./types/modal.types";

@@ -1,5 +1,5 @@
 import React from 'react';
-import type { ModalFooterProps } from '../types';
+import type { ModalFooterProps } from '../types/modal.types';
 import { cn } from '../../../lib/utils';
 import { getModalStyle, modalFooterAlignStyles } from '../style/style';
 
