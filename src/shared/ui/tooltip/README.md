@@ -64,7 +64,7 @@ src/shared/ui/tooltip/
 
 ### 3.1 Main Orchestrator — `Tooltip.tsx`
 
-[Tooltip.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/ui/tooltip/Tooltip.tsx) is the entry-point component. It connects `@floating-ui/react` state hooks with the trigger and content components.
+[Tooltip.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/ui/tooltip/Tooltip.tsx) is the entry-point component. It connects `@floating-ui/react` state hooks with the trigger and content components.
 
 **Responsibilities:**
 - Manages tooltip `open` state and `arrowEl` reference.
@@ -77,7 +77,7 @@ src/shared/ui/tooltip/
 
 ### 3.2 Trigger Subcomponent — `items/TooltipTrigger.tsx`
 
-[TooltipTrigger.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/ui/tooltip/items/TooltipTrigger.tsx) wraps the target element (`children`) that triggers the tooltip on hover/focus.
+[TooltipTrigger.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/ui/tooltip/items/TooltipTrigger.tsx) wraps the target element (`children`) that triggers the tooltip on hover/focus.
 
 **Props (`TooltipTriggerProps`):**
 | Prop | Type | Description |
@@ -91,7 +91,7 @@ src/shared/ui/tooltip/
 
 ### 3.3 Content Subcomponent — `items/TooltipContent.tsx`
 
-[TooltipContent.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/ui/tooltip/items/TooltipContent.tsx) renders the floating tooltip card using `FloatingPortal` and `@floating-ui/react`'s `FloatingArrow`.
+[TooltipContent.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/ui/tooltip/items/TooltipContent.tsx) renders the floating tooltip card using `FloatingPortal` and `@floating-ui/react`'s `FloatingArrow`.
 
 **Key Capabilities:**
 - Computes inline CSS custom variables (`--tt-bg`, `--tt-text`, `--tt-border`) via `resolvedStyles`.
@@ -103,7 +103,7 @@ src/shared/ui/tooltip/
 
 ### 3.4 Style Tokens & Variants — `styles/tooltip.styles.ts`
 
-[tooltip.styles.ts](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/ui/tooltip/styles/tooltip.styles.ts) provides centralized design system tokens and predefined visual variants.
+[tooltip.styles.ts](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/ui/tooltip/styles/tooltip.styles.ts) provides centralized design system tokens and predefined visual variants.
 
 **Available Variants (`TooltipVariant`):**
 - `dark` *(default)*: Neutral dark background with white text.
@@ -118,7 +118,7 @@ src/shared/ui/tooltip/
 
 ### 3.5 Type Definitions — `types/tooltip.types.ts`
 
-[tooltip.types.ts](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/ui/tooltip/types/tooltip.types.ts) defines all TypeScript interfaces and props contracts.
+[tooltip.types.ts](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/ui/tooltip/types/tooltip.types.ts) defines all TypeScript interfaces and props contracts.
 
 ```ts
 export type TooltipVariant =

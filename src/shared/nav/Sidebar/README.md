@@ -116,7 +116,7 @@ src/shared/nav/Sidebar/
 
 ### Section 3.1: Core Container — `Sidebar.tsx`
 
-- **File Path**: [Sidebar.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/nav/Sidebar/Sidebar.tsx)
+- **File Path**: [Sidebar.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/nav/Sidebar/Sidebar.tsx)
 - **Role**: Main top-level component that manages width resizing, local storage saving, mobile touch gestures, body scroll locking, keyboard resize controls, and passes props down to header, nav, and footer subcomponents.
 
 #### Complete Props Table (`SidebarMainProps`)
@@ -134,7 +134,7 @@ src/shared/nav/Sidebar/
 | `defaultWidth` | `number` | `256` | No | Width of sidebar in pixels when expanded (if no saved width in localStorage). |
 | `minWidth` | `number` | `200` | No | Minimum allowed width in pixels when resizing. |
 | `maxWidth` | `number` | `480` | No | Maximum allowed width in pixels when resizing. |
-| `storageKey` | `string` | `"passionnova..."` | No | LocalStorage key name used to save user's custom width. Set to `""` to disable persistence. |
+| `storageKey` | `string` | `"omkar_devbox..."` | No | LocalStorage key name used to save user's custom width. Set to `""` to disable persistence. |
 | `onWidthChange` | `(w: number) => void` | `undefined` | No | Listener callback fired whenever user resizes the sidebar. |
 | `menu` | `MenuSection[]` | Default Menu | No | Array of sections and items to display in sidebar. |
 | `side` | `"left" \| "right"` | `"left"` | No | Sets sidebar placement on left or right side of screen. |
@@ -144,7 +144,7 @@ src/shared/nav/Sidebar/
 
 ### Section 3.2: Top Branding & Toggle — `SidebarHeader.tsx`
 
-- **File Path**: [SidebarHeader.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/nav/Sidebar/items/SidebarHeader.tsx)
+- **File Path**: [SidebarHeader.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/nav/Sidebar/items/SidebarHeader.tsx)
 - **Role**: Renders company logo icon, company title, desktop collapse toggle icon button (PanelLeftClose/PanelLeftOpen), and mobile explicit close button (`X`).
 
 #### Component Import & Direct Usage
@@ -157,7 +157,7 @@ import { SidebarHeader } from "@/shared/nav/Sidebar/items/SidebarHeader";
   isHeaderHovered={false}
   setIsHeaderHovered={(hovered) => console.log(hovered)}
   onToggle={() => console.log("Toggle collapsed")}
-  companyName="CVForge"
+  companyName="omkar-devbox"
 />
 ```
 
@@ -178,7 +178,7 @@ import { SidebarHeader } from "@/shared/nav/Sidebar/items/SidebarHeader";
 
 ### Section 3.3: Navigation Scroll Container — `SidebarNav.tsx`
 
-- **File Path**: [SidebarNav.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/nav/Sidebar/items/SidebarNav.tsx)
+- **File Path**: [SidebarNav.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/nav/Sidebar/items/SidebarNav.tsx)
 - **Role**: Contains the scrollable middle section of the sidebar. Iterates over the `menu` section list and renders `SidebarSection` for each category.
 
 #### Props Breakdown (`SidebarNavProps`)
@@ -197,7 +197,7 @@ interface SidebarNavProps {
 
 ### Section 3.4: Category Section Wrapper — `SidebarSection.tsx`
 
-- **File Path**: [SidebarSection.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/nav/Sidebar/items/SidebarSection.tsx)
+- **File Path**: [SidebarSection.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/nav/Sidebar/items/SidebarSection.tsx)
 - **Role**: Groups related navigation items under an uppercase category heading (e.g., `MAIN NAVIGATION`). In collapsed mode, hides text and displays a subtle divider line.
 
 #### Props Breakdown (`SidebarSectionProps`)
@@ -212,7 +212,7 @@ interface SidebarNavProps {
 
 ### Section 3.5: Nav Links & Nested Submenus — `SidebarItem.tsx`
 
-- **File Path**: [SidebarItem.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/nav/Sidebar/items/SidebarItem.tsx)
+- **File Path**: [SidebarItem.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/nav/Sidebar/items/SidebarItem.tsx)
 - **Role**: Renders individual navigation links. Handles route preloading on hover, automatic active link highlighting, dropdown chevron animation for submenus, nested recursive rendering for multi-level menus, and tooltips in collapsed mode.
 
 #### Key Features inside `SidebarItem`:
@@ -225,7 +225,7 @@ interface SidebarNavProps {
 
 ### Section 3.6: User Profile & Logout Footer — `SidebarFooter.tsx`
 
-- **File Path**: [SidebarFooter.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/nav/Sidebar/items/SidebarFooter.tsx)
+- **File Path**: [SidebarFooter.tsx](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/nav/Sidebar/items/SidebarFooter.tsx)
 - **Role**: Positioned at the bottom of the sidebar. Shows user avatar (or initial icon fallback), user full name, user email, organization name, and a stylized Logout button. Shows tooltips in collapsed mode.
 
 #### Direct Usage Example
@@ -249,7 +249,7 @@ import { SidebarFooter } from "@/shared/nav/Sidebar/items/SidebarFooter";
 
 ### Section 3.7: Active Route Engine — `SidebarNavigationModel`
 
-- **File Path**: [types.ts](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/nav/Sidebar/types/types.ts#L44)
+- **File Path**: [types.ts](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/nav/Sidebar/types/types.ts#L44)
 - **Role**: Pure utility class providing static methods to evaluate active routes.
 
 ```ts
@@ -266,7 +266,7 @@ export class SidebarNavigationModel {
 
 ### Section 3.8: Styling Tokens — `sidebar.styles.ts`
 
-- **File Path**: [sidebar.styles.ts](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/nav/Sidebar/styles/sidebar.styles.ts)
+- **File Path**: [sidebar.styles.ts](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/nav/Sidebar/styles/sidebar.styles.ts)
 - **Role**: Contains all Tailwind CSS style objects. Designed for high readability, easy maintenance, smooth transition animations, and dark mode support (`dark:` classes).
 
 Key exported style objects:
@@ -282,7 +282,7 @@ Key exported style objects:
 
 ### Section 3.9: TypeScript Schema & Types — `types.ts`
 
-- **File Path**: [types.ts](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend/src/shared/nav/Sidebar/types/types.ts)
+- **File Path**: [types.ts](file:///home/omkar/Documents/system_mechatronics/CVForge/code/CVForge_frontend%20%28Copy%29/src/shared/nav/Sidebar/types/types.ts)
 - **Role**: Centralized source of truth for all TypeScript types.
 
 ---
@@ -387,7 +387,7 @@ export const MY_APP_MENU: MenuSection[] = [
 - **How to Resize**: Mouse-down on the right border of the sidebar and drag left/right.
 - **Keyboard Control**: Focus the handle using `Tab` key, then press `ArrowLeft` or `ArrowRight` to adjust width by 10px. Press `Home` for min width, `End` for max width, or `Enter`/`Space` to reset.
 - **Double Click**: Double-click the resize handle to instantly reset to default width (`256px`).
-- **Persistence**: Saved automatically into browser `localStorage` under `passionnova_technologis_sidebar_width`.
+- **Persistence**: Saved automatically into browser `localStorage` under `omkar_devbox_sidebar_width`.
 
 ---
 
@@ -467,7 +467,7 @@ export function AppLayout() {
             ☰ Menu
           </button>
           <span className="text-sm font-semibold text-slate-700 dark:text-slate-200">
-            CVForge Application
+            omkar-devbox Application
           </span>
         </header>
 
@@ -626,4 +626,4 @@ export function CustomComposedSidebar() {
 > **Answer**: Pass `defaultWidth={300}` (or any pixel numeric value).
 
 ### Q5: How do I clear saved sidebar width in localStorage?
-> **Answer**: Pass `storageKey=""` to disable reading/writing to localStorage, or clear the storage key `"passionnova_technologis_sidebar_width"` in browser developer tools.
+> **Answer**: Pass `storageKey=""` to disable reading/writing to localStorage, or clear the storage key `"omkar_devbox_sidebar_width"` in browser developer tools.

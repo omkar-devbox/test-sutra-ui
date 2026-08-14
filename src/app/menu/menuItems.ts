@@ -24,7 +24,7 @@ export const SIDEBAR_MENU: MenuSection[] = [
 // ==================== Sidebar Configuration ====================
 
 export const SIDEBAR_CONFIG = {
-  companyName: "PassionNova\nTechnologis",
+  companyName: "Omkar's\nDevBox",
   logo: null,
   menu: SIDEBAR_MENU,
 };

@@ -254,7 +254,7 @@ import { Button } from "@/shared/ui/button";
 export const FullWidthDemo = () => {
   return (
     <div className="max-w-sm p-4 border rounded-xl space-y-3">
-      <h3 className="font-bold">Sign In to CVForge</h3>
+      <h3 className="font-bold">Sign In to omkar-devbox</h3>
       <Button fullWidth variant="primary">
         Continue with Email
       </Button>
@@ -436,4 +436,4 @@ export const buttonVariants = cva(
 ---
 
 ## 📄 License & System Info
-Part of the **CVForge UI Component Architecture**. Built with React, Radix UI Slot, Class Variance Authority (CVA), and Lucide React.
+Part of the **omkar-devbox UI Component Architecture**. Built with React, Radix UI Slot, Class Variance Authority (CVA), and Lucide React.

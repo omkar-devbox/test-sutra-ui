@@ -12,7 +12,7 @@ export const TopNav: FC<TopNavProps> = memo(
     subtitle,
     user = {
       name: "John Doe",
-      email: "john.doe@passionnova.technologis",
+      email: "",
       role: "System Admin",
     },
     onToggleSidebar,

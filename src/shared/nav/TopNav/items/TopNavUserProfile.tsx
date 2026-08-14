@@ -7,7 +7,7 @@ export const TopNavUserProfile: FC<TopNavUserProfileProps> = memo(
   ({
     user = {
       name: "John Doe",
-      email: "john.doe@passionnova.technologis",
+      email: "[EMAIL_ADDRESS]",
       role: "System Admin",
     },
     onLogout,
