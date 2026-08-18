@@ -1,5 +1,6 @@
 import { useState, memo, type FC } from "react";
-import { ChevronDown, User, Settings, LogOut, Shield } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { ChevronDown, User, LogOut, Shield } from "lucide-react";
 import type { TopNavUserProfileProps } from "../types/types";
 import { userProfileStyles } from "../styles/topNav.styles";
 
@@ -14,6 +15,7 @@ export const TopNavUserProfile: FC<TopNavUserProfileProps> = memo(
     styleConfig,
   }) => {
     const [isProfileOpen, setIsProfileOpen] = useState(false);
+    const navigate = useNavigate();
 
     return (
       <div className={userProfileStyles.container}>
@@ -73,19 +75,14 @@ export const TopNavUserProfile: FC<TopNavUserProfileProps> = memo(
               <div className={userProfileStyles.itemGroup}>
                 <button
                   type="button"
-                  onClick={() => setIsProfileOpen(false)}
+                  onClick={() => {
+                    setIsProfileOpen(false);
+                    navigate("/profile");
+                  }}
                   className={userProfileStyles.item(styleConfig)}
                 >
                   <User size={15} className="text-slate-400" />
                   My Profile
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setIsProfileOpen(false)}
-                  className={userProfileStyles.item(styleConfig)}
-                >
-                  <Settings size={15} className="text-slate-400" />
-                  Account Settings
                 </button>
               </div>
 

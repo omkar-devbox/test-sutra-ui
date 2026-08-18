@@ -166,15 +166,6 @@ export const ColumnMenu = <T,>({
               onClose();
             }}
           />
-          <MenuItem
-            icon={<RotateCcw size={16} />}
-            label="Reset Column"
-            onClick={() => {
-              onResize(column.id, column.width || minWidth);
-              onPin(column.id, null);
-              onClose();
-            }}
-          />
         </div>
       )}
     </div>

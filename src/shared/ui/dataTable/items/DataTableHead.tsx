@@ -57,6 +57,17 @@ const DataTableHeadInner = <T,>({
     return [...leftPinned, ...scrollable, ...rightPinned];
   }, [columns, pinning]);
 
+  const mainColId = useMemo(() => {
+    return (
+      orderedColumns.find(
+        (col) =>
+          col.id !== "select" &&
+          col.id !== "selection" &&
+          col.id !== "actions",
+      )?.id || orderedColumns[0]?.id
+    );
+  }, [orderedColumns]);
+
   return (
     <thead className={styles.head}>
       <tr className={styles.headerRow}>
@@ -65,7 +76,7 @@ const DataTableHeadInner = <T,>({
             key={col.id}
             column={col}
             isLast={idx === orderedColumns.length - 1}
-            isSecondToLast={idx === orderedColumns.length - 2}
+            isMainCol={col.id === mainColId}
             width={sizing[col.id] || col.width}
             isSorted={sorting.find((s) => s.id === col.id)}
             pinDirection={pinning[col.id] || null}

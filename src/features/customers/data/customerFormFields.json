@@ -1,0 +1,108 @@
+[
+  {
+    "id": "fullName",
+    "name": "fullName",
+    "label": "Full Name / Contact Person",
+    "type": "text",
+    "placeholder": "e.g., Aarav Mehta",
+    "required": true,
+    "hint": "Enter primary customer or representative name",
+    "colSpan": "full"
+  },
+  {
+    "id": "email",
+    "name": "email",
+    "label": "Email Address",
+    "type": "email",
+    "placeholder": "e.g., customer@example.com",
+    "required": true,
+    "hint": "Primary contact & billing email",
+    "colSpan": 1
+  },
+  {
+    "id": "contactNumber",
+    "name": "contactNumber",
+    "label": "Contact Number",
+    "type": "text",
+    "placeholder": "e.g., +91 98220 11223",
+    "required": true,
+    "hint": "Mobile or phone number",
+    "colSpan": 1
+  },
+  {
+    "id": "companyName",
+    "name": "companyName",
+    "label": "Company / Business Name",
+    "type": "text",
+    "placeholder": "e.g., Nexus Advertising Pvt Ltd",
+    "required": false,
+    "hint": "Optional business or firm title",
+    "colSpan": 1
+  },
+  {
+    "id": "status",
+    "name": "status",
+    "label": "Customer Status",
+    "type": "select",
+    "placeholder": "Select status...",
+    "required": false,
+    "options": [
+      {
+        "label": "Active",
+        "value": "Active"
+      },
+      {
+        "label": "Inactive",
+        "value": "Inactive"
+      }
+    ],
+    "isSearchable": false,
+    "isClearable": false,
+    "colSpan": 1
+  },
+  {
+    "id": "houseNoBuilding",
+    "name": "houseNoBuilding",
+    "label": "HOUSE NO. / BUILDING NAME",
+    "type": "text",
+    "placeholder": "e.g. Flat 101, Springfield Apts",
+    "required": false,
+    "colSpan": "full"
+  },
+  {
+    "id": "landmarkArea",
+    "name": "landmarkArea",
+    "label": "LANDMARK / AREA",
+    "type": "text",
+    "placeholder": "e.g. Near Central Park",
+    "required": false,
+    "colSpan": "full"
+  },
+  {
+    "id": "city",
+    "name": "city",
+    "label": "CITY",
+    "type": "text",
+    "placeholder": "City",
+    "required": false,
+    "colSpan": 1
+  },
+  {
+    "id": "state",
+    "name": "state",
+    "label": "STATE",
+    "type": "text",
+    "placeholder": "State",
+    "required": false,
+    "colSpan": 1
+  },
+  {
+    "id": "pincode",
+    "name": "pincode",
+    "label": "PINCODE",
+    "type": "text",
+    "placeholder": "Pincode",
+    "required": false,
+    "colSpan": "full"
+  }
+]

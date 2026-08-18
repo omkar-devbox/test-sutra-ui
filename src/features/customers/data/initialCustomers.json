@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cust-101",
+    "fullName": "Aarav Mehta",
+    "email": "aarav.mehta@nexusad.com",
+    "contactNumber": "+91 98220 11223",
+    "companyName": "Nexus Advertising Pvt Ltd",
+    "address": "MG Road, Pune, Maharashtra",
+    "status": "Active",
+    "totalOrders": 14,
+    "createdAt": "2026-01-05T09:00:00Z",
+    "lastActive": "Just now"
+  },
+  {
+    "id": "cust-102",
+    "fullName": "Meera Joshi",
+    "email": "meera@sunrisestudio.in",
+    "contactNumber": "+91 97123 99887",
+    "companyName": "Sunrise Photo Studio",
+    "address": "Kothrud, Pune, Maharashtra",
+    "status": "Active",
+    "totalOrders": 8,
+    "createdAt": "2026-01-15T11:20:00Z",
+    "lastActive": "1 hour ago"
+  },
+  {
+    "id": "cust-103",
+    "fullName": "Rohan Deshmukh",
+    "email": "rohan@apexmedia.org",
+    "contactNumber": "+91 98900 44556",
+    "companyName": "Apex Outdoor Media",
+    "address": "Viman Nagar, Pune, Maharashtra",
+    "status": "Active",
+    "totalOrders": 25,
+    "createdAt": "2026-01-22T14:45:00Z",
+    "lastActive": "Yesterday"
+  },
+  {
+    "id": "cust-104",
+    "fullName": "Pooja Hegde",
+    "email": "pooja.h@brightbanners.com",
+    "contactNumber": "+91 96543 88776",
+    "companyName": "Bright Banners & Signs",
+    "address": "Hinjawadi, Pune, Maharashtra",
+    "status": "Active",
+    "totalOrders": 5,
+    "createdAt": "2026-02-02T10:15:00Z",
+    "lastActive": "3 days ago"
+  },
+  {
+    "id": "cust-105",
+    "fullName": "Sanjay Pawar",
+    "email": "sanjay@pawarprints.co.in",
+    "contactNumber": "+91 99887 11223",
+    "companyName": "Pawar Digital Prints",
+    "address": "Hadapsar, Pune, Maharashtra",
+    "status": "Inactive",
+    "totalOrders": 2,
+    "createdAt": "2026-02-08T16:00:00Z",
+    "lastActive": "2 weeks ago"
+  }
+]

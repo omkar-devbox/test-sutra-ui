@@ -2,15 +2,15 @@ import type { ModalStyleConfig } from "../types/modal.types";
 
 export const defaultModalStyleConfig: ModalStyleConfig = {
   overlay: {
-    bg: "bg-gray-900/40 dark:bg-black/60",
-    blur: "backdrop-blur-[2px]",
+    bg: "bg-[#004066]/40 dark:bg-black/70",
+    blur: "backdrop-blur-sm",
     zIndex: 50,
   },
   panel: {
-    bg: "bg-white dark:bg-slate-900",
+    bg: "bg-white dark:bg-[#001929]",
     rounded: "rounded-3xl",
     shadow: "shadow-2xl",
-    border: "border border-slate-200 dark:border-slate-800",
+    border: "border border-[#004066]/20 dark:border-[#003352]",
     maxWidths: {
       sm: "max-w-sm",
       md: "max-w-md",
@@ -25,25 +25,25 @@ export const defaultModalStyleConfig: ModalStyleConfig = {
     },
   },
   header: {
-    bg: "bg-white dark:bg-slate-900",
-    border: "border-b border-slate-200 dark:border-slate-800",
+    bg: "bg-[#004066] text-white",
+    border: "border-b border-[#003352]",
     padding: "px-6 py-4",
     titleSize: "text-lg font-semibold",
-    titleColor: "text-slate-900 dark:text-slate-100",
+    titleColor: "text-white",
     descSize: "text-sm font-normal",
-    descColor: "text-slate-500 dark:text-slate-400",
-    closeBtnColor: "text-slate-400 hover:text-slate-600 dark:hover:text-slate-200",
-    closeBtnHoverBg: "hover:bg-slate-100 dark:hover:bg-slate-800",
+    descColor: "text-[#ebf7ff]/70",
+    closeBtnColor: "text-[#ebf7ff]/70 hover:text-white",
+    closeBtnHoverBg: "hover:bg-[#003352]",
   },
   body: {
-    bg: "bg-white dark:bg-slate-900",
+    bg: "bg-white dark:bg-[#001929]",
     padding: "px-6 py-4",
-    textColor: "text-slate-800 dark:text-slate-200",
+    textColor: "text-[#004066] dark:text-[#ebf7ff]",
     maxHeight: "max-h-[70vh]",
   },
   footer: {
-    bg: "bg-slate-50/80 dark:bg-slate-900/80",
-    border: "border-t border-slate-200 dark:border-slate-800",
+    bg: "bg-[#ebf7ff]/60 dark:bg-[#00263e]/80",
+    border: "border-t border-[#004066]/20 dark:border-[#003352]",
     padding: "px-6 py-4",
   },
 };

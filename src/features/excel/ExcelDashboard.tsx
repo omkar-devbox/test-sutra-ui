@@ -78,19 +78,19 @@ export const ExcelDashboard: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col gap-6 max-w-7xl mx-auto pb-12">
+    <div className="flex flex-col gap-6 w-full mx-auto pb-12">
       {/* Page Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-6 md:p-8 rounded-3xl shadow-lg relative overflow-hidden">
-        <div className="absolute right-0 top-0 translate-x-12 -translate-y-12 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-gradient-to-r from-[#004066] via-[#005280] to-[#004066] border border-[#005280] text-white p-6 md:p-8 rounded-3xl shadow-xl relative overflow-hidden">
+        <div className="absolute right-0 top-0 translate-x-12 -translate-y-12 w-64 h-64 bg-[#0077be]/20 rounded-full blur-3xl pointer-events-none" />
         <div className="z-10">
-          <div className="flex items-center gap-2 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-2">
-            <Sparkles className="h-4 w-4" />
+          <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-[#0077be] text-white text-xs font-bold uppercase tracking-wider mb-3 shadow-sm">
+            <Sparkles className="h-3.5 w-3.5" />
             FastAPI + openpyxl Deep Parser & LLM Modifier
           </div>
           <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight">
             Excel & CSV Intelligence Portal
           </h1>
-          <p className="text-sm text-slate-300 max-w-2xl mt-1 leading-relaxed">
+          <p className="text-sm text-[#ebf7ff]/80 max-w-2xl mt-1 leading-relaxed">
             Upload spreadsheets to extract detailed openpyxl structural metadata, auto-detect data headers, preview rows, and apply natural language modifications with instant live preview updates.
           </p>
         </div>

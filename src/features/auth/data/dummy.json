@@ -1,0 +1,36 @@
+{
+  "demoCredentials": [
+    {
+      "email": "admin@flexflow.com",
+      "contactNo": "9876543210",
+      "password": "Password@123",
+      "user": {
+        "id": "usr_demo_admin_01",
+        "fullName": "Admin User",
+        "email": "admin@flexflow.com",
+        "contactNo": "9876543210",
+        "role": "admin",
+        "authProvider": "email"
+      },
+      "accessToken": "demo_access_token_admin_987654321",
+      "refreshToken": "demo_refresh_token_admin_987654321"
+    },
+    {
+      "email": "manager@flexflow.com",
+      "contactNo": "9876543211",
+      "password": "Password@123",
+      "user": {
+        "id": "usr_demo_manager_02",
+        "fullName": "Station Manager",
+        "email": "manager@flexflow.com",
+        "contactNo": "9876543211",
+        "role": "user",
+        "authProvider": "email"
+      },
+      "accessToken": "demo_access_token_manager_987654321",
+      "refreshToken": "demo_refresh_token_manager_987654321"
+    }
+  ],
+  "mockOtp": "123456",
+  "mockResetToken": "demo_reset_token_xyz123"
+}

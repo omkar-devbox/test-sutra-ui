@@ -1,13 +1,13 @@
 export const dataTableStyles = {
   // 🔹 Container
   container:
-    "w-full flex flex-col overflow-hidden relative rounded-xl border border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs isolate",
+    "w-full flex flex-col overflow-hidden relative rounded-xl border border-[#004066]/20 dark:border-[#003352] bg-[#ebf7ff] dark:bg-[#001929] shadow-xs isolate",
 
   // 🔹 Table
   table: "w-max min-w-full border-separate border-spacing-0 table",
 
   // 🔹 Header
-  head: "sticky top-0 z-[100] bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-xs border-b border-slate-200/80 dark:border-slate-800",
+  head: "sticky top-0 z-[100] bg-[#004066] text-white border-b border-[#003352]",
 
   headerRow: "flex",
 
@@ -16,22 +16,22 @@ export const dataTableStyles = {
     isMenuOpen: boolean,
     isLast: boolean,
     align?: "left" | "center" | "right",
-    isSecondToLast?: boolean,
+    isMainCol?: boolean,
   ) => {
     return [
-      "flex items-center px-4 h-[44px] bg-slate-50/90 dark:bg-slate-900/90 box-border border-b border-slate-200/80 dark:border-slate-800",
+      "flex items-center px-4 h-[44px] bg-[#004066] text-white box-border border-b border-[#003352]",
       align === "center"
         ? "justify-center text-center"
         : align === "right"
           ? "justify-end text-right"
           : "justify-between text-left",
-      "text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 select-none",
+      "text-[11px] font-bold uppercase tracking-wider text-[#ebf7ff]/90 select-none",
       isPinned ? "sticky" : "relative",
-      isSecondToLast
-        ? "flex-1 border-r border-slate-200/80 dark:border-slate-800"
+      isMainCol
+        ? "flex-1 border-r border-[#003352]"
         : isLast
           ? "border-r-0"
-          : "border-r border-slate-200/80 dark:border-slate-800",
+          : "border-r border-[#003352]",
       isMenuOpen ? "z-[110]" : isPinned ? "z-[2]" : "z-[1]",
     ].join(" ");
   },
@@ -51,17 +51,17 @@ export const dataTableStyles = {
 
   // 🔹 Resizer
   resizer:
-    "absolute right-0 top-0 bottom-0 w-1 cursor-col-resize z-10 transition-colors duration-200 hover:bg-blue-500",
+    "absolute right-0 top-0 bottom-0 w-1 cursor-col-resize z-10 transition-colors duration-200 hover:bg-[#0077be]",
 
   // 🔹 Body
   body: "block",
 
   row: (isSelected: boolean) => {
     return [
-      "flex border-b border-slate-100 dark:border-slate-800/60 transition-colors duration-150 cursor-pointer dt-row",
+      "flex border-b border-[#004066]/10 dark:border-[#003352]/60 transition-colors duration-150 cursor-pointer dt-row",
       isSelected
-        ? "bg-blue-50/40 dark:bg-blue-950/30 hover:bg-blue-50/60 dark:hover:bg-blue-950/50"
-        : "bg-white dark:bg-slate-900 hover:bg-slate-50/60 dark:hover:bg-slate-800/40",
+        ? "bg-[#0077be]/20 hover:bg-[#0077be]/30"
+        : "bg-white dark:bg-[#00263e] hover:bg-[#ebf7ff]/70 dark:hover:bg-[#003352]/60",
     ].join(" ");
   },
 
@@ -69,24 +69,24 @@ export const dataTableStyles = {
     isPinned: boolean,
     isLast: boolean,
     align?: "left" | "center" | "right",
-    isSecondToLast?: boolean,
+    isMainCol?: boolean,
     isSelected?: boolean,
   ) => {
     return [
-      "flex items-center px-4 min-h-[52px] box-border text-[13px] text-slate-700 dark:text-slate-300 font-medium",
+      "flex items-center px-4 min-h-[52px] box-border text-[13px] text-[#004066] dark:text-[#ebf7ff] font-medium",
       isPinned ? "sticky z-[1]" : "relative z-0",
       isSelected
-        ? "bg-blue-50/40 dark:bg-blue-950/30"
+        ? "bg-[#0077be]/20"
         : isPinned
-          ? "bg-white dark:bg-slate-900"
+          ? "bg-white dark:bg-[#00263e]"
           : "bg-transparent",
       "dt-cell",
-      isSecondToLast
+      isMainCol
         ? "flex-1 border-r-transparent"
         : isLast
           ? "border-r-0"
           : isPinned
-            ? "border-r border-slate-200/80 dark:border-slate-800"
+            ? "border-r border-[#004066]/20 dark:border-[#003352]"
             : "border-r-transparent",
       align === "center"
         ? "justify-center"
@@ -109,7 +109,7 @@ export const dataTableStyles = {
 
   // 🔹 Footer
   footer:
-    "sticky bottom-0 z-[100] bg-slate-50/80 dark:bg-slate-900/80 border-t border-slate-200/80 dark:border-slate-800",
+    "sticky bottom-0 z-[100] bg-[#004066] text-white border-t border-[#003352]",
 
   footerRow: "flex",
 
@@ -117,17 +117,17 @@ export const dataTableStyles = {
     isPinned: boolean,
     isLast: boolean,
     align?: "left" | "center" | "right",
-    isSecondToLast?: boolean,
+    isMainCol?: boolean,
   ) => {
     return [
-      "flex items-center px-4 h-[40px] bg-slate-50/80 dark:bg-slate-900/80 box-border text-[12px] font-semibold text-slate-700 dark:text-slate-300",
-      isPinned ? "sticky z-[2] bg-slate-50/80 dark:bg-slate-900/80" : "relative z-[1]",
-      isSecondToLast
+      "flex items-center px-4 h-[40px] bg-[#004066] text-white box-border text-[12px] font-semibold",
+      isPinned ? "sticky z-[2] bg-[#004066]" : "relative z-[1]",
+      isMainCol
         ? "flex-1 border-r-transparent"
         : isLast
           ? "border-r-0"
           : isPinned
-            ? "border-r border-slate-200/80 dark:border-slate-800"
+            ? "border-r border-[#003352]"
             : "border-r-transparent",
       align === "center"
         ? "justify-center"
@@ -142,73 +142,73 @@ export const dataTableStyles = {
     return [
       "flex items-center gap-3 px-3 py-2 cursor-pointer text-[13px] transition-colors duration-150 rounded-lg",
       active
-        ? "bg-blue-50 dark:bg-blue-950/50 text-blue-600 dark:text-blue-400 font-semibold"
-        : "text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800",
+        ? "bg-[#0077be] text-white font-semibold"
+        : "text-[#004066] dark:text-[#ebf7ff] hover:bg-[#ebf7ff] dark:hover:bg-[#003352]",
     ].join(" ");
   },
 
   // 🔹 Toolbar
   toolbar:
-    "flex items-center justify-between px-4 py-3 bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800 gap-4 flex-wrap text-slate-700 dark:text-slate-300",
+    "flex items-center justify-between px-4 py-3 bg-white dark:bg-[#00263e] border-b border-[#004066]/20 dark:border-[#003352] gap-4 flex-wrap text-[#004066] dark:text-[#ebf7ff]",
 
   toolbarActionContainer:
-    "flex items-center bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-slate-200/80 dark:border-slate-700",
+    "flex items-center bg-[#ebf7ff] dark:bg-[#001929] p-1 rounded-xl border border-[#004066]/20 dark:border-[#003352]",
 
   toolbarActionBtn: (isActive: boolean) => {
     return [
       "flex items-center justify-center w-[34px] h-[32px] rounded-lg transition-all duration-200 border-none cursor-pointer text-xs font-semibold",
       isActive
-        ? "bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-2xs"
-        : "bg-transparent text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200",
+        ? "bg-[#0077be] text-white shadow-xs"
+        : "bg-transparent text-[#004066]/70 dark:text-[#ebf7ff]/70 hover:text-[#0077be]",
     ].join(" ");
   },
 
   toolbarResetBtn:
-    "flex items-center justify-center h-[38px] rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 cursor-pointer transition-all duration-200 text-slate-600 dark:text-slate-400 gap-2 text-[13px] font-semibold px-3.5 hover:border-blue-500 hover:text-blue-600 shadow-2xs",
+    "flex items-center justify-center h-[38px] rounded-xl border border-[#004066]/30 bg-white dark:bg-[#00263e] cursor-pointer transition-all duration-200 text-[#004066] dark:text-[#ebf7ff] gap-2 text-[13px] font-semibold px-3.5 hover:border-[#0077be] hover:text-[#0077be] shadow-2xs",
 
   // 🔹 Pagination
   pagination:
-    "flex flex-col sm:flex-row items-center justify-between px-4 py-3 bg-white dark:bg-slate-900 border-t border-slate-200/80 dark:border-slate-800 text-[12px] text-slate-500 dark:text-slate-400 font-medium gap-3",
+    "flex flex-col sm:flex-row items-center justify-between px-4 py-3 bg-white dark:bg-[#00263e] border-t border-[#004066]/20 dark:border-[#003352] text-[12px] text-[#004066]/80 dark:text-[#ebf7ff]/80 font-medium gap-3",
 
   paginationGroup: "flex items-center gap-5 flex-wrap",
 
   paginationSelect:
-    "px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-800 outline-none cursor-pointer bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-[12px] hover:border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/10 transition-all font-medium shadow-2xs",
+    "px-2.5 py-1 rounded-lg border border-[#004066]/30 outline-none cursor-pointer bg-white dark:bg-[#001929] text-[#004066] dark:text-[#ebf7ff] text-[12px] hover:border-[#0077be] focus:border-[#0077be] focus:ring-2 focus:ring-[#0077be]/20 transition-all font-medium shadow-2xs",
 
-  paginationText: "text-slate-800 dark:text-slate-200 font-bold",
+  paginationText: "text-[#004066] dark:text-white font-bold",
 
   paginationInputContainer: "relative flex items-center",
 
   paginationInput:
-    "w-14 pl-2.5 pr-6 py-1 rounded-lg border border-slate-200 dark:border-slate-800 outline-none bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 text-[12px] hover:border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/10 transition-all font-medium text-center shadow-2xs [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none",
+    "w-14 pl-2.5 pr-6 py-1 rounded-lg border border-[#004066]/30 outline-none bg-white dark:bg-[#001929] text-[#004066] dark:text-[#ebf7ff] text-[12px] hover:border-[#0077be] focus:border-[#0077be] focus:ring-2 focus:ring-[#0077be]/20 transition-all font-medium text-center shadow-2xs [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none",
 
   paginationInputClear:
-    "absolute right-1.5 top-1/2 -translate-y-1/2 p-0.5 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 cursor-pointer",
+    "absolute right-1.5 top-1/2 -translate-y-1/2 p-0.5 rounded-md hover:bg-[#ebf7ff] dark:hover:bg-[#003352] transition-colors text-[#004066]/60 hover:text-[#0077be] cursor-pointer",
 
   paginationActions: "flex items-center gap-1.5",
 
   paginationButton: (disabled: boolean) => {
     return [
-      "flex items-center justify-center w-7 h-7 rounded-lg border border-slate-200 dark:border-slate-800 transition-all duration-150 text-[12px]",
+      "flex items-center justify-center w-7 h-7 rounded-lg border border-[#004066]/30 transition-all duration-150 text-[12px]",
       disabled
-        ? "bg-slate-50 dark:bg-slate-900/50 text-slate-300 dark:text-slate-700 cursor-not-allowed border-slate-100 dark:border-slate-800/50"
-        : "bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-100 hover:border-slate-300 dark:hover:border-slate-700 shadow-2xs",
+        ? "bg-[#ebf7ff]/50 dark:bg-[#001929]/50 text-[#004066]/30 dark:text-[#ebf7ff]/30 cursor-not-allowed border-[#004066]/10"
+        : "bg-white dark:bg-[#00263e] text-[#004066] dark:text-[#ebf7ff] cursor-pointer hover:bg-[#0077be] hover:text-white hover:border-[#0077be] shadow-2xs font-semibold",
     ].join(" ");
   },
 
   // 🔹 States
   loadingRow:
-    "flex border-b border-slate-100 dark:border-slate-800 h-[64px] items-center px-4",
+    "flex border-b border-[#004066]/10 dark:border-[#003352] h-[64px] items-center px-4",
 
   emptyRow: "flex h-[200px] items-center justify-center",
 
-  emptyContent: "text-slate-500 dark:text-slate-400 text-center",
+  emptyContent: "text-[#004066]/70 dark:text-[#ebf7ff]/70 text-center",
 
   // 🔹 MENU
   menu: `
-    bg-white dark:bg-slate-900
+    bg-white dark:bg-[#00263e]
     rounded-2xl
-    border border-slate-200 dark:border-slate-800
+    border border-[#004066]/30 dark:border-[#003352]
     ring-1 ring-black/5
     w-[280px]
     shadow-xl
@@ -220,7 +220,7 @@ export const dataTableStyles = {
   // 🔹 Card View
   cardGrid: (orientation: "vertical" | "horizontal") =>
     [
-      "p-6 bg-slate-50/50 dark:bg-slate-950 gap-4",
+      "p-6 bg-[#ebf7ff] dark:bg-[#001929] gap-4",
       orientation === "horizontal"
         ? "flex flex-col w-full"
         : "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4",
@@ -228,11 +228,11 @@ export const dataTableStyles = {
 
   card: (isSelected: boolean, orientation: "vertical" | "horizontal") =>
     [
-      "bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-xs hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer flex",
+      "bg-white dark:bg-[#00263e] rounded-2xl border border-[#004066]/20 dark:border-[#003352] shadow-xs hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer flex",
       orientation === "horizontal" ? "w-full flex-row" : "flex-col",
       isSelected
-        ? "ring-2 ring-blue-500 border-transparent shadow-blue-500/10"
-        : "hover:border-slate-300 dark:hover:border-slate-700",
+        ? "ring-2 ring-[#0077be] border-transparent shadow-[#0077be]/20"
+        : "hover:border-[#0077be]",
     ].join(" "),
 
   cardContent: (orientation: "vertical" | "horizontal") =>
@@ -250,6 +250,6 @@ export const dataTableStyles = {
     ].join(" "),
 
   cardLabel:
-    "text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider",
-  cardValue: "text-[14px] text-slate-800 dark:text-slate-200 font-medium",
+    "text-[10px] font-bold text-[#004066]/60 dark:text-[#ebf7ff]/60 uppercase tracking-wider",
+  cardValue: "text-[14px] text-[#004066] dark:text-white font-medium",
 };

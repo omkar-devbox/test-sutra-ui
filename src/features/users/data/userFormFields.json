@@ -1,0 +1,63 @@
+[
+  {
+    "id": "fullName",
+    "name": "fullName",
+    "label": "Full Name",
+    "type": "text",
+    "placeholder": "e.g., Rajesh Sharma",
+    "required": true,
+    "hint": "Enter user's first and last name",
+    "colSpan": "full"
+  },
+  {
+    "id": "email",
+    "name": "email",
+    "label": "Email Address",
+    "type": "email",
+    "placeholder": "e.g., rajesh.sharma@example.com",
+    "required": true,
+    "hint": "User login & notification email",
+    "colSpan": 1
+  },
+  {
+    "id": "contactNumber",
+    "name": "contactNumber",
+    "label": "Contact Number",
+    "type": "text",
+    "placeholder": "e.g., +91 98220 12345",
+    "required": true,
+    "hint": "Mobile or phone number",
+    "colSpan": 1
+  },
+  {
+    "id": "password",
+    "name": "password",
+    "label": "Password",
+    "type": "password",
+    "placeholder": "••••••••",
+    "required": false,
+    "hint": "Minimum 6 characters (Required for new users)",
+    "colSpan": 1
+  },
+  {
+    "id": "systemRole",
+    "name": "systemRole",
+    "label": "System Role",
+    "type": "select",
+    "placeholder": "Select system role...",
+    "required": true,
+    "options": [
+      {
+        "label": "Admin",
+        "value": "Admin"
+      },
+      {
+        "label": "Staff",
+        "value": "Staff"
+      }
+    ],
+    "isSearchable": false,
+    "isClearable": false,
+    "colSpan": 1
+  }
+]

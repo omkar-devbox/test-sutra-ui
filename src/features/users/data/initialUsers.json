@@ -1,0 +1,52 @@
+[
+  {
+    "id": "usr-101",
+    "fullName": "Rajesh Sharma",
+    "email": "rajesh.sharma@jayhindprint.com",
+    "contactNumber": "+91 98220 12345",
+    "systemRole": "Admin",
+    "status": "Active",
+    "createdAt": "2026-01-10T09:00:00Z",
+    "lastActive": "Just now"
+  },
+  {
+    "id": "usr-102",
+    "fullName": "Priya Patel",
+    "email": "priya.patel@jayhindprint.com",
+    "contactNumber": "+91 97123 45678",
+    "systemRole": "Manager",
+    "status": "Active",
+    "createdAt": "2026-01-12T10:30:00Z",
+    "lastActive": "2 hours ago"
+  },
+  {
+    "id": "usr-103",
+    "fullName": "Amit Verma",
+    "email": "amit.verma@jayhindprint.com",
+    "contactNumber": "+91 98980 87654",
+    "systemRole": "Operator",
+    "status": "Active",
+    "createdAt": "2026-01-20T14:15:00Z",
+    "lastActive": "1 day ago"
+  },
+  {
+    "id": "usr-104",
+    "fullName": "Sneha Kulkarni",
+    "email": "sneha.k@jayhindprint.com",
+    "contactNumber": "+91 96543 21098",
+    "systemRole": "Staff",
+    "status": "Active",
+    "createdAt": "2026-02-01T11:45:00Z",
+    "lastActive": "3 hours ago"
+  },
+  {
+    "id": "usr-105",
+    "fullName": "Vikram Deshmukh",
+    "email": "vikram.d@jayhindprint.com",
+    "contactNumber": "+91 99887 76655",
+    "systemRole": "Viewer",
+    "status": "Inactive",
+    "createdAt": "2026-02-05T16:20:00Z",
+    "lastActive": "5 days ago"
+  }
+]

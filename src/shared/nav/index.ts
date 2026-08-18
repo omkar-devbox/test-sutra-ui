@@ -14,3 +14,13 @@ export { TopNavNotifications } from "./TopNav/items/TopNavNotifications";
 export { TopNavUserProfile } from "./TopNav/items/TopNavUserProfile";
 export * from "./TopNav/types/types";
 export * from "./TopNav/styles/topNav.styles";
+
+export { BottomNav, DEFAULT_BOTTOM_NAV_ITEMS } from "./BottomNav";
+export type {
+  BottomNavItem,
+  BottomNavProps,
+  BottomNavFabConfig,
+  BottomNavSubmenuDrawerProps,
+} from "./BottomNav";
+
+

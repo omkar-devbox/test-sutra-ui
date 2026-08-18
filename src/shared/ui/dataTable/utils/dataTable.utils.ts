@@ -31,7 +31,7 @@ export const calculateColumnMinWidth = <T,>(
 };
 
 /**
- * Dynamically calculates the optimal content-fit width for any column without hardcoded column IDs.
+ * Dynamically calculates the optimal content-fit width for any column based on actual table data.
  */
 export const calculateColumnContentWidth = <T,>(
   column: ColumnDef<T>,
@@ -42,29 +42,67 @@ export const calculateColumnContentWidth = <T,>(
 
   // 1. Measure Header Label Width
   let labelWidth = 80;
-  if (context && column.label) {
-    context.font = "600 11px Inter, system-ui, sans-serif";
-    labelWidth = context.measureText(column.label).width + 36;
+  if (column.label) {
+    if (context) {
+      context.font = "700 11px Inter, system-ui, sans-serif";
+      const sortExtra = ("sortable" in column ? column.sortable !== false : false) ? 20 : 0;
+      const filterExtra = column.isFilter ? 24 : 0;
+      labelWidth = context.measureText(column.label).width + sortExtra + filterExtra + 36;
+    } else {
+      labelWidth = column.label.length * 9 + 48;
+    }
   }
 
   // 2. Measure Row Cell Content Widths
   let maxCellWidth = 0;
-  if (context && Array.isArray(data) && data.length > 0) {
-    context.font = "400 13px Inter, system-ui, sans-serif";
+  if (Array.isArray(data) && data.length > 0) {
     const sampleRows = data.slice(0, 50);
 
     sampleRows.forEach((row: any) => {
-      let textVal = "";
-      if ("key" in column && column.key && row[column.key] !== undefined && row[column.key] !== null) {
-        textVal = String(row[column.key]);
-      }
-
       let cellW = 0;
-      if (textVal) {
-        const measured = context.measureText(textVal).width + 36;
-        cellW = Math.min(measured, 320);
-      } else if (column.render) {
-        cellW = column.width ?? column.minWidth ?? 90;
+
+      if (column.id === "select" || column.id === "selection") {
+        cellW = 48;
+      } else if (column.id === "actions") {
+        cellW = 160;
+      } else {
+        const textValuesToMeasure: string[] = [];
+
+        if ("key" in column && column.key && row[column.key] !== undefined && row[column.key] !== null) {
+          const rawVal = row[column.key];
+
+          if (column.key === "pricePerUnit" || column.id === "pricePerUnit" || column.id === "price") {
+            const formattedPrice = `₹${Number(rawVal).toFixed(2)}${row.unit ? ` / ${row.unit}` : ""}`;
+            textValuesToMeasure.push(formattedPrice);
+          } else if (column.key === "gsm" || column.id === "gsm") {
+            textValuesToMeasure.push(`${rawVal} GSM`);
+          } else if (column.key === "status" || column.id === "status") {
+            textValuesToMeasure.push(`    ${rawVal}    `);
+          } else {
+            textValuesToMeasure.push(String(rawVal));
+          }
+        }
+
+        if (row.description && (column.id === "paperTypeName" || column.id === "name" || column.id === "title")) {
+          textValuesToMeasure.push(String(row.description).slice(0, 50));
+        }
+
+        if (textValuesToMeasure.length > 0) {
+          let maxValW = 0;
+          textValuesToMeasure.forEach((str) => {
+            let measured = 0;
+            if (context) {
+              context.font = "500 13px Inter, system-ui, sans-serif";
+              measured = context.measureText(str).width + 36;
+            } else {
+              measured = str.length * 8 + 36;
+            }
+            if (measured > maxValW) maxValW = measured;
+          });
+          cellW = maxValW;
+        } else if (column.render) {
+          cellW = column.width ?? column.minWidth ?? 100;
+        }
       }
 
       if (cellW > maxCellWidth) {
@@ -76,7 +114,7 @@ export const calculateColumnContentWidth = <T,>(
   // 3. Compute final optimal width bounded by minWidth and maxWidth
   let calculated = Math.ceil(Math.max(labelWidth, maxCellWidth) * 1.05);
 
-  const baseMin = column.minWidth ?? 60;
+  const baseMin = column.minWidth ?? 80;
   calculated = Math.max(baseMin, calculated);
 
   if (column.maxWidth) {

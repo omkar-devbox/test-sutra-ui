@@ -419,9 +419,11 @@ export const useCustomSelect = (props: CustomSelectProps) => {
   // ── Outside click ────────────────────────────────────────────────────────
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
+      const target = e.target as Node;
       if (
         containerRef.current &&
-        !containerRef.current.contains(e.target as Node)
+        !containerRef.current.contains(target) &&
+        !listRef.current?.contains(target)
       ) {
         if (allowCreate && !isMulti && searchTerm.trim()) {
           const normSearch = normalize(searchTerm);

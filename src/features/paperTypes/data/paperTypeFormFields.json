@@ -1,0 +1,106 @@
+[
+  {
+    "id": "paperTypeName",
+    "name": "paperTypeName",
+    "label": "Paper Type Name",
+    "type": "text",
+    "placeholder": "e.g., Premium Glossy Art Card 300 GSM",
+    "required": true,
+    "hint": "Enter the descriptive brand or material name",
+    "colSpan": "full"
+  },
+  {
+    "id": "category",
+    "name": "category",
+    "label": "Category",
+    "type": "select",
+    "placeholder": "Select category...",
+    "required": true,
+    "options": [
+      {
+        "label": "Art Paper",
+        "value": "Art Paper"
+      },
+      {
+        "label": "Cardstock",
+        "value": "Cardstock"
+      },
+      {
+        "label": "Vinyl Flex",
+        "value": "Vinyl Flex"
+      },
+      {
+        "label": "Bond Paper",
+        "value": "Bond Paper"
+      },
+      {
+        "label": "Glossy",
+        "value": "Glossy"
+      },
+      {
+        "label": "Matte",
+        "value": "Matte"
+      },
+      {
+        "label": "Specialty",
+        "value": "Specialty"
+      },
+      {
+        "label": "other",
+        "value": "other"
+      }
+    ],
+    "isSearchable": true,
+    "isClearable": true,
+    "colSpan": 1
+  },
+  {
+    "id": "pricePerUnit",
+    "name": "pricePerUnit",
+    "label": "Price per Unit (₹)",
+    "type": "number",
+    "placeholder": "e.g., 25.50",
+    "required": true,
+    "hint": "Base rate per unit",
+    "colSpan": 1
+  },
+  {
+    "id": "gsm",
+    "name": "gsm",
+    "label": "GSM / Thickness (g/m²)",
+    "type": "number",
+    "placeholder": "e.g., 250",
+    "required": false,
+    "colSpan": 1
+  },
+  {
+    "id": "unit",
+    "name": "unit",
+    "label": "Unit of Measurement",
+    "type": "select",
+    "placeholder": "Select unit...",
+    "options": [
+      {
+        "label": "Per Sheet",
+        "value": "Sheet"
+      },
+      {
+        "label": "Per Sq. Ft.",
+        "value": "Sq. Ft."
+      },
+      {
+        "label": "Per Meter",
+        "value": "Meter"
+      },
+      {
+        "label": "Per Roll",
+        "value": "Roll"
+      },
+      {
+        "label": "Per Pack",
+        "value": "Pack"
+      }
+    ],
+    "colSpan": 1
+  }
+]

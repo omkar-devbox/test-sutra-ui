@@ -21,7 +21,7 @@ interface HeaderCellProps<T> {
   column: ColumnDef<T>;
   width?: number;
   isLast: boolean;
-  isSecondToLast?: boolean;
+  isMainCol?: boolean;
   isSorted?: ColumnSort<T>;
   pinDirection: PinDirection;
   isMenuOpen: boolean;
@@ -39,7 +39,7 @@ export const HeaderCell = <T,>({
   column,
   width,
   isLast,
-  isSecondToLast,
+  isMainCol,
   isSorted,
   pinDirection,
   isMenuOpen,
@@ -171,7 +171,7 @@ export const HeaderCell = <T,>({
         isMenuOpen,
         isLast,
         headerAlign,
-        isSecondToLast,
+        isMainCol,
       )}
       style={{
         width: `${width || minWidth}px`,

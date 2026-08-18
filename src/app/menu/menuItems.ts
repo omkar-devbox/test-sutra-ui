@@ -1,23 +1,100 @@
-import { LayoutDashboard } from "lucide-react";
+import {
+  LayoutDashboard,
+  ShoppingCart,
+  Users as UsersIcon,
+  Settings2,
+  Box,
+  UserCheck,
+} from "lucide-react";
 import type { MenuSection, MenuItem } from "@/shared/nav/Sidebar/types/types";
 
-// ==================== Sidebar Menu ====================
+// ==================== Navigation Menu Items ====================
+
+export const MENU_ITEMS: MenuItem[] = [
+  {
+    id: "dashboard",
+    key: "dashboard",
+    label: "Dashboard",
+    icon: LayoutDashboard,
+    path: "/",
+    tooltip: "Overview & Role Dashboards",
+    children: [
+      {
+        id: "admin-dashboard",
+        key: "admin-dashboard",
+        label: "Admin View",
+        icon: LayoutDashboard,
+        path: "/dashboard/admin",
+        tooltip: "Executive analytics & business metrics",
+      },
+      {
+        id: "staff-dashboard",
+        key: "staff-dashboard",
+        label: "Staff View",
+        icon: LayoutDashboard,
+        path: "/dashboard/staff",
+        tooltip: "Print floor machine queue & workstation",
+      },
+      {
+        id: "customer-dashboard",
+        key: "customer-dashboard",
+        label: "Customer View",
+        icon: LayoutDashboard,
+        path: "/dashboard/customer",
+        tooltip: "Customer self-service & live tracker",
+      },
+    ],
+  },
+  {
+    id: "orders",
+    key: "orders",
+    label: "Orders",
+    icon: ShoppingCart,
+    path: "/orders",
+    tooltip: "Manage Customer Orders",
+  },
+  {
+    id: "customers",
+    key: "customers",
+    label: "Customers",
+    icon: UsersIcon,
+    path: "/customers",
+    tooltip: "Customer Directory & Management",
+  },
+  {
+    id: "configuration",
+    key: "configuration",
+    label: "Configuration",
+    icon: Settings2,
+    path: "/configuration",
+    tooltip: "System Configuration & Settings",
+    children: [
+      {
+        id: "paper-types",
+        key: "paper-types",
+        label: "Paper Type Setting",
+        icon: Box,
+        path: "/configuration/paper-types",
+        tooltip: "Configure paper types & pricing",
+      },
+      {
+        id: "users",
+        key: "users",
+        label: "Users",
+        icon: UserCheck,
+        path: "/configuration/users",
+        tooltip: "Manage users and access permissions",
+      },
+    ],
+  },
+];
 
 export const SIDEBAR_MENU: MenuSection[] = [
   {
     id: "1",
-    label: "Dashboard",
-    description: "Main overview & metrics",
-    items: [
-      {
-        id: "1-1",
-        key: "dashboard",
-        label: "Dashboard",
-        icon: LayoutDashboard,
-        path: "/",
-        tooltip: "Overview & Analytics Dashboard",
-      },
-    ],
+    label: "Main Navigation",
+    description: "Main application menu",
+    items: MENU_ITEMS,
   },
 ];
 

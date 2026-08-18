@@ -153,18 +153,6 @@ export const DataTableToolbar: FC<DataTableToolbarProps> = memo(
                   </button>
                 </div>
               )}
-
-              {onReset && (
-                <button
-                  type="button"
-                  onClick={onReset}
-                  title="Reset table state"
-                  className={styles.toolbarResetBtn}
-                >
-                  <RotateCcw size={16} />
-                  {hasValue && <span>Reset</span>}
-                </button>
-              )}
             </div>
           )}
         </div>

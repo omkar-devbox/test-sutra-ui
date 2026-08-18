@@ -13,11 +13,11 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-brand-primary text-white hover:bg-blue-600 dark:hover:bg-blue-500 shadow-[0_1px_2px_rgba(0,0,0,0.05)]",
+        primary: "bg-[#0077be] text-white hover:bg-[#00629e] active:bg-[#004d7c] shadow-md shadow-[#0077be]/20 font-semibold",
+        secondary: "bg-[#004066] text-white hover:bg-[#003352] active:bg-[#00263e] font-semibold",
         danger: "bg-red-600 text-white hover:bg-red-700 shadow-[0_1px_2px_rgba(0,0,0,0.05)]",
-        secondary: "bg-zinc-100 text-zinc-900 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700",
-        outline: "border border-zinc-200 bg-white text-zinc-900 hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900",
-        ghost: "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100",
+        outline: "border border-[#004066]/30 bg-white text-[#004066] hover:bg-[#ebf7ff] hover:border-[#0077be] dark:bg-[#00263e] dark:text-[#ebf7ff] dark:border-[#005280]",
+        ghost: "text-[#004066] hover:bg-[#ebf7ff] hover:text-[#0077be] dark:text-[#ebf7ff] dark:hover:bg-[#003352]",
       },
       size: {
         sm: "h-8 px-3 text-[12px]",

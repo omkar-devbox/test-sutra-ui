@@ -22,6 +22,14 @@ export const DataTableFooter = <T,>({
   // 🔹 final render order
   const orderedColumns = [...leftPinned, ...scrollable, ...rightPinned];
 
+  const mainColId =
+    orderedColumns.find(
+      (col) =>
+        col.id !== "select" &&
+        col.id !== "selection" &&
+        col.id !== "actions",
+    )?.id || orderedColumns[0]?.id;
+
   // 🔹 check if footer exists
   const hasFooter = columns.some((col) => !!col.footerRender);
 
@@ -36,7 +44,7 @@ export const DataTableFooter = <T,>({
             column={col}
             data={data}
             isLast={idx === orderedColumns.length - 1} // last column check
-            isSecondToLast={idx === orderedColumns.length - 2}
+            isMainCol={col.id === mainColId}
             width={sizing[col.id] || 150} // default width fallback
             pinDirection={pinning[col.id] || null} // pin state
             leftOffset={
@@ -65,7 +73,7 @@ interface FooterCellProps<T> {
   data: T[];
   width: number;
   isLast: boolean;
-  isSecondToLast?: boolean;
+  isMainCol?: boolean;
   pinDirection: PinDirection;
   leftOffset?: number;
   rightOffset?: number;
@@ -76,7 +84,7 @@ const FooterCell = <T,>({
   data,
   width,
   isLast,
-  isSecondToLast,
+  isMainCol,
   pinDirection,
   leftOffset,
   rightOffset,
@@ -89,7 +97,7 @@ const FooterCell = <T,>({
         isPinned,
         isLast,
         column.align,
-        isSecondToLast,
+        isMainCol,
       )}
       style={{
         width: `${width}px`,

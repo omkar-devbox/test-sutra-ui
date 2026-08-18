@@ -1,0 +1,78 @@
+[
+  {
+    "id": "ord-1001",
+    "orderNumber": "ORD-2026-001",
+    "customerId": "cust-101",
+    "customerName": "Aarav Mehta (Nexus Advertising)",
+    "items": [
+      {
+        "id": "item-1",
+        "jobName": "Shop Front Hoarding Banner",
+        "mediaId": "pt-102",
+        "mediaName": "Star Flex Frontlit 240 GSM",
+        "pricePerUnit": 12.00,
+        "unit": "Sq. Ft.",
+        "heightFt": 10,
+        "widthFt": 20,
+        "areaSqFt": 200,
+        "estimatedCost": 2400,
+        "artworkAttached": true,
+        "artworkFileName": "shopfront_final_v2.pdf",
+        "isExpanded": true
+      }
+    ],
+    "shippingInfo": {
+      "tag": "Work",
+      "houseNoBuilding": "Plot 42, Nexus Tower",
+      "landmarkArea": "MG Road",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "pincode": "411001",
+      "status": "COMPLETE"
+    },
+    "productionNotes": "Ensure high color saturation on frontlit banner. Grommets every 2 feet.",
+    "totalBatchCount": 1,
+    "totalPayloadSqFt": 200,
+    "totalValuation": 2400,
+    "status": "In Production",
+    "createdAt": "2026-08-15T10:30:00Z"
+  },
+  {
+    "id": "ord-1002",
+    "orderNumber": "ORD-2026-002",
+    "customerId": "cust-103",
+    "customerName": "Rohan Deshmukh (Apex Outdoor)",
+    "items": [
+      {
+        "id": "item-1",
+        "jobName": "Event Backdrop Screen",
+        "mediaId": "pt-102",
+        "mediaName": "Star Flex Frontlit 240 GSM",
+        "pricePerUnit": 12.00,
+        "unit": "Sq. Ft.",
+        "heightFt": 8,
+        "widthFt": 12,
+        "areaSqFt": 96,
+        "estimatedCost": 1152,
+        "artworkAttached": true,
+        "artworkFileName": "backdrop_apex.ai",
+        "isExpanded": true
+      }
+    ],
+    "shippingInfo": {
+      "tag": "Location",
+      "houseNoBuilding": "Convention Hall B",
+      "landmarkArea": "Viman Nagar",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "pincode": "411014",
+      "status": "COMPLETE"
+    },
+    "productionNotes": "Urgent delivery required by 8 AM tomorrow.",
+    "totalBatchCount": 1,
+    "totalPayloadSqFt": 96,
+    "totalValuation": 1152,
+    "status": "Submitted",
+    "createdAt": "2026-08-17T14:15:00Z"
+  }
+]

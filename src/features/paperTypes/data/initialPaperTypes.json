@@ -1,0 +1,90 @@
+[
+  {
+    "id": "pt-101",
+    "paperTypeName": "300 GSM Premium Art Card",
+    "category": "Cardstock",
+    "pricePerUnit": 18.50,
+    "gsm": 300,
+    "unit": "Sheet",
+    "description": "High-density double coated art card suitable for premium visiting cards and brochure covers.",
+    "status": "Active",
+    "createdAt": "2026-01-15T10:00:00Z"
+  },
+  {
+    "id": "pt-102",
+    "paperTypeName": "Star Flex Frontlit 240 GSM",
+    "category": "Vinyl Flex",
+    "pricePerUnit": 12.00,
+    "gsm": 240,
+    "unit": "Sq. Ft.",
+    "description": "Heavy-duty frontlit flex banner fabric for outdoor hoarding and shop signage.",
+    "status": "Active",
+    "createdAt": "2026-01-18T11:30:00Z"
+  },
+  {
+    "id": "pt-103",
+    "paperTypeName": "Ultra Gloss Photo Paper 220 GSM",
+    "category": "Glossy",
+    "pricePerUnit": 24.00,
+    "gsm": 220,
+    "unit": "Sheet",
+    "description": "High-gloss photographic paper with instant dry coating for vivid color photo prints.",
+    "status": "Active",
+    "createdAt": "2026-02-01T09:15:00Z"
+  },
+  {
+    "id": "pt-104",
+    "paperTypeName": "Executive Bond Paper 90 GSM",
+    "category": "Bond Paper",
+    "pricePerUnit": 4.50,
+    "gsm": 90,
+    "unit": "Sheet",
+    "description": "Watermarked premium bond paper for official letterheads and legal documentation.",
+    "status": "Active",
+    "createdAt": "2026-02-05T14:20:00Z"
+  },
+  {
+    "id": "pt-105",
+    "paperTypeName": "Smooth Matte Board 250 GSM",
+    "category": "Matte",
+    "pricePerUnit": 16.00,
+    "gsm": 250,
+    "unit": "Sheet",
+    "description": "Glare-free velvet matte paper for elegant invitation cards and art prints.",
+    "status": "Active",
+    "createdAt": "2026-02-10T16:00:00Z"
+  },
+  {
+    "id": "pt-106",
+    "paperTypeName": "Polyester Non-Tearable 180 Micron",
+    "category": "Specialty",
+    "pricePerUnit": 32.00,
+    "gsm": 210,
+    "unit": "Sheet",
+    "description": "Waterproof, tear-resistant synthetic paper ideal for restaurant menus and outdoor tags.",
+    "status": "Active",
+    "createdAt": "2026-02-12T08:45:00Z"
+  },
+  {
+    "id": "pt-107",
+    "paperTypeName": "Glossy Sticker Paper (Self-Adhesive)",
+    "category": "Glossy",
+    "pricePerUnit": 14.50,
+    "gsm": 135,
+    "unit": "Sheet",
+    "description": "Pressure-sensitive adhesive backed glossy paper for product labels and stickers.",
+    "status": "Active",
+    "createdAt": "2026-02-14T12:00:00Z"
+  },
+  {
+    "id": "pt-108",
+    "paperTypeName": "Textured Canvas Fabric 380 GSM",
+    "category": "Specialty",
+    "pricePerUnit": 65.00,
+    "gsm": 380,
+    "unit": "Sq. Ft.",
+    "description": "100% cotton archivable canvas with textured grain for fine art reproductions.",
+    "status": "Inactive",
+    "createdAt": "2026-02-16T15:10:00Z"
+  }
+]

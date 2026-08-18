@@ -1,0 +1,16 @@
+export const authStyles = {
+  container: "min-h-screen w-full bg-gradient-to-br from-[#001929] via-[#002b47] to-[#004066] flex flex-col items-center justify-center p-4 md:p-8 relative overflow-hidden text-white font-sans",
+  bgGlowTop: "absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#0077be]/20 rounded-full blur-[140px] pointer-events-none",
+  bgGlowBottom: "absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-cyan-500/15 rounded-full blur-[140px] pointer-events-none",
+  card: "w-full max-w-[480px] bg-white/95 dark:bg-[#00253d]/95 backdrop-blur-xl rounded-[32px] shadow-[0_25px_70px_rgba(0,0,0,0.35)] border border-white/20 p-8 md:p-12 relative z-10 text-slate-800 dark:text-white transition-all duration-300",
+  largeCard: "w-full max-w-[1040px] bg-white/95 dark:bg-[#00253d]/95 backdrop-blur-xl rounded-[32px] shadow-[0_25px_70px_rgba(0,0,0,0.35)] border border-white/20 overflow-hidden flex flex-col md:flex-row relative z-10 text-slate-800 dark:text-white",
+  brandingSection: "hidden md:flex md:w-[45%] bg-gradient-to-br from-[#003352] to-[#001929] p-12 flex-col justify-between relative overflow-hidden border-r border-white/10",
+  formSection: "w-full md:w-[55%] p-8 md:p-12 flex flex-col justify-center bg-white dark:bg-[#00253d]",
+  inputGroup: "space-y-2",
+  label: "text-[11px] font-black tracking-widest text-[#004066]/70 dark:text-[#ebf7ff]/70 uppercase",
+  input: "w-full h-13 bg-slate-50 dark:bg-[#001929] border border-slate-200 dark:border-[#0077be]/30 rounded-2xl px-4 text-sm font-medium text-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#0077be] transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500",
+  primaryBtn: "w-full h-13 bg-gradient-to-r from-[#0077be] to-[#005588] hover:from-[#0088d4] hover:to-[#0066a3] text-white font-bold text-base rounded-2xl shadow-lg shadow-[#0077be]/25 transition-all flex items-center justify-center gap-2.5 active:scale-[0.99] disabled:opacity-50 cursor-pointer",
+  secondaryBtn: "w-full h-13 bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/15 text-slate-700 dark:text-white font-bold text-sm rounded-2xl transition-all flex items-center justify-center gap-2 cursor-pointer",
+  errorAlert: "p-4 bg-red-500/10 border border-red-500/30 rounded-2xl flex items-center gap-3 text-red-600 dark:text-red-400 text-sm font-bold animate-shake",
+  successAlert: "p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl flex items-center gap-3 text-emerald-600 dark:text-emerald-300 text-sm font-bold",
+};

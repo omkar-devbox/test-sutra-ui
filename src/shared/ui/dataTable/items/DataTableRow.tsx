@@ -34,6 +34,17 @@ const DataTableRowInner = <T,>({
     return [...leftPinned, ...scrollable, ...rightPinned];
   }, [columns, pinning]);
 
+  const mainColId = useMemo(() => {
+    return (
+      orderedColumns.find(
+        (col) =>
+          col.id !== "select" &&
+          col.id !== "selection" &&
+          col.id !== "actions",
+      )?.id || orderedColumns[0]?.id
+    );
+  }, [orderedColumns]);
+
   return (
     <tr
       ref={measureRef}
@@ -59,7 +70,7 @@ const DataTableRowInner = <T,>({
               : undefined
           }
           isLast={idx === orderedColumns.length - 1}
-          isSecondToLast={idx === orderedColumns.length - 2}
+          isMainCol={col.id === mainColId}
           isSelected={isSelected}
           onClick={
             col.id === "selection" ? () => onToggleSelection?.(row) : undefined
@@ -91,7 +102,7 @@ interface DataTableCellProps<T> {
   leftOffset?: number;
   rightOffset?: number;
   isLast?: boolean;
-  isSecondToLast?: boolean;
+  isMainCol?: boolean;
   isSelected?: boolean;
   onClick?: () => void;
 }
@@ -105,7 +116,7 @@ const DataTableCellInner = <T,>({
   leftOffset,
   rightOffset,
   isLast,
-  isSecondToLast,
+  isMainCol,
   isSelected,
   onClick,
 }: DataTableCellProps<T>) => {
@@ -127,7 +138,7 @@ const DataTableCellInner = <T,>({
         isPinned,
         isLast || false,
         column.align,
-        isSecondToLast || false,
+        isMainCol || false,
         isSelected,
       )}
       style={{
